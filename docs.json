@@ -1,11 +1,11 @@
 {
   "$schema": "https://mintlify.com/docs.json",
   "theme": "mint",
-  "name": "Mint Starter Kit",
+  "name": "Slopeside AI",
   "colors": {
-    "primary": "#16A34A",
-    "light": "#07C983",
-    "dark": "#15803D"
+    "primary": "#377449",
+    "light": "#eaff61",
+    "dark": "#1c3335"
   },
   "favicon": "/favicon.svg",
   "navigation": {
@@ -94,7 +94,8 @@
   },
   "logo": {
     "light": "/logo/light.svg",
-    "dark": "/logo/dark.svg"
+    "dark": "/logo/dark.svg",
+    "href": "https://cdn.prod.website-files.com/684377930e60d1d5be96822e/6906c61bedc89e709d06115b_Slopeside%20Logo%20Black.png"
   },
   "navbar": {
     "links": [
@@ -127,5 +128,8 @@
       "github": "https://github.com/mintlify",
       "linkedin": "https://linkedin.com/company/mintlify"
     }
+  },
+  "appearance": {
+    "strict": false
   }
 }
