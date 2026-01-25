@@ -13,7 +13,17 @@
       {
         "tab": "Welcome",
         "pages": [
+          "what-slopeside-is-and-is-not",
+          "who-slopeside-is-for",
           "how-slopeside-works-with-meta"
+        ]
+      },
+      {
+        "tab": "Getting Started",
+        "pages": [
+          "getting-started/quickstart-overview",
+          "getting-started/connect-meta-ads",
+          "getting-started/first-time-setup-checklist"
         ]
       }
     ]
