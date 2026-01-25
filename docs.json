@@ -94,7 +94,12 @@
   },
   "logo": "/images/6906c61bedc89e709d06115b_SlopesideLogoBlack.png",
   "navbar": {
-    "links": [],
+    "links": [
+      {
+        "label": "Open Slopeside",
+        "href": "https://dashboard.slopeside.ai/"
+      }
+    ],
     "primary": {
       "type": "button",
       "label": "Dashboard",
