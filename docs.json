@@ -11,19 +11,35 @@
   "navigation": {
     "tabs": [
       {
-        "tab": "Welcome",
-        "pages": [
-          "what-slopeside-is-and-is-not",
-          "who-slopeside-is-for",
-          "how-slopeside-works-with-meta"
-        ]
+        "tab": "Help & Support"
       },
       {
-        "tab": "Getting Started",
-        "pages": [
-          "getting-started/quickstart-overview",
-          "getting-started/connect-meta-ads",
-          "getting-started/first-time-setup-checklist"
+        "tab": "User Guide",
+        "groups": [
+          {
+            "group": "Welcome",
+            "pages": [
+              "what-slopeside-is-and-is-not",
+              "who-slopeside-is-for",
+              "how-slopeside-works-with-meta"
+            ]
+          },
+          {
+            "group": "Getting Started",
+            "pages": [
+              "getting-started/quickstart-overview",
+              "getting-started/connect-meta-ads",
+              "getting-started/first-time-setup-checklist"
+            ]
+          },
+          {
+            "group": "Audience Fundamentals",
+            "pages": []
+          },
+          {
+            "group": "B2B vs DTC Targeting",
+            "pages": []
+          }
         ]
       }
     ]
