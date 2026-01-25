@@ -5,7 +5,7 @@
   "colors": {
     "primary": "#377449",
     "light": "#eaff61",
-    "dark": "#1c3335"
+    "dark": "#377449"
   },
   "favicon": "/favicon.svg",
   "navigation": {
@@ -92,16 +92,12 @@
       }
     ]
   },
-  "logo": {
-    "light": "/logo/light.svg",
-    "dark": "/logo/dark.svg",
-    "href": "https://cdn.prod.website-files.com/684377930e60d1d5be96822e/6906c61bedc89e709d06115b_Slopeside%20Logo%20Black.png"
-  },
+  "logo": "https://cdn.prod.website-files.com/684377930e60d1d5be96822e/6906c61bedc89e709d06115b_Slopeside%20Logo%20Black.png",
   "navbar": {
     "links": [
       {
         "label": "Support",
-        "href": "mailto:hi@mintlify.com"
+        "href": "mailto:support@slopeside.ai"
       }
     ],
     "primary": {
@@ -131,5 +127,10 @@
   },
   "appearance": {
     "strict": false
+  },
+  "background": {
+    "color": {
+      "dark": "#1c3335"
+    }
   }
 }
