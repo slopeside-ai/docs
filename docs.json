@@ -11,34 +11,82 @@
   "navigation": {
     "tabs": [
       {
-        "tab": "Help & Support"
+        "tab": "Help & Support",
+        "groups": [
+          {
+            "group": "Support",
+            "pages": [
+              "help-and-support/support/faq"
+            ]
+          }
+        ]
       },
       {
         "tab": "User Guide",
         "groups": [
           {
-            "group": "Welcome",
+            "group": "Quick Start",
             "pages": [
-              "what-slopeside-is-and-is-not",
-              "who-slopeside-is-for",
-              "how-slopeside-works-with-meta"
+              "user-guide/quick-start/welcome",
+              "user-guide/quick-start/connect-meta",
+              "user-guide/quick-start/activate-audience",
+              "user-guide/quick-start/best-practices"
             ]
           },
           {
-            "group": "Getting Started",
+            "group": "Manage",
             "pages": [
-              "getting-started/quickstart-overview",
-              "getting-started/connect-meta-ads",
-              "getting-started/first-time-setup-checklist"
+              "user-guide/manage/audiences",
+              "user-guide/manage/activations",
+              "user-guide/manage/catalog",
+              "user-guide/manage/teams",
+              "user-guide/manage/custom-audiences"
             ]
           },
           {
-            "group": "Audience Fundamentals",
-            "pages": []
+            "group": "Testing",
+            "pages": [
+              "user-guide/testing/why-test",
+              "user-guide/testing/run-the-test",
+              "user-guide/testing/success-metrics",
+              "user-guide/testing/mistakes"
+            ]
           },
           {
-            "group": "B2B vs DTC Targeting",
-            "pages": []
+            "group": "Use Cases",
+            "pages": [
+              "user-guide/use-cases/dtc",
+              "user-guide/use-cases/b2-b",
+              "user-guide/use-cases/agencies",
+              "user-guide/use-cases/expansion"
+            ]
+          },
+          {
+            "group": "Billing",
+            "pages": [
+              "user-guide/billing/plans",
+              "user-guide/billing/add-audiences",
+              "user-guide/billing/upgrade-downgrade",
+              "user-guide/billing/invoices",
+              "user-guide/billing/cancel"
+            ]
+          },
+          {
+            "group": "Security",
+            "pages": [
+              "user-guide/security/privacy",
+              "user-guide/security/compliance",
+              "user-guide/security/data-handling"
+            ]
+          },
+          {
+            "group": "Troubleshoot",
+            "pages": [
+              "user-guide/troubleshoot/meta-connection",
+              "user-guide/troubleshoot/low-match-rate",
+              "user-guide/troubleshoot/not-spending",
+              "user-guide/troubleshoot/errors"
+            ]
           }
         ]
       }
