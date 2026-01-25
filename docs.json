@@ -11,17 +11,6 @@
   "navigation": {
     "tabs": [
       {
-        "tab": "Help & Support",
-        "groups": [
-          {
-            "group": "Support",
-            "pages": [
-              "help-and-support/support/faq"
-            ]
-          }
-        ]
-      },
-      {
         "tab": "User Guide",
         "groups": [
           {
@@ -86,6 +75,17 @@
               "user-guide/troubleshoot/low-match-rate",
               "user-guide/troubleshoot/not-spending",
               "user-guide/troubleshoot/errors"
+            ]
+          }
+        ]
+      },
+      {
+        "tab": "Help & Support",
+        "groups": [
+          {
+            "group": "Support",
+            "pages": [
+              "help-and-support/support/faq"
             ]
           }
         ]
