@@ -94,16 +94,7 @@
   },
   "logo": "/images/6906c61bedc89e709d06115b_SlopesideLogoBlack.png",
   "navbar": {
-    "links": [
-      {
-        "label": "Support",
-        "href": "https://dashboard.slopeside.ai/inbox?tab=contact"
-      },
-      {
-        "label": "Dashboard",
-        "href": "https://dashboard.slopeside.ai/"
-      }
-    ],
+    "links": [],
     "primary": {
       "type": "button",
       "label": "Dashboard",
