@@ -1,61 +1,90 @@
 ---
-title: "Connect Meta"
-description: "How to connect Meta Ads correctly, required permissions, and common setup pitfalls."
+title: "Connect Your Meta Account"
+description: "How to link your Meta Ads account to Slopeside so audiences can be delivered."
 ---
 
-## Connecting Meta Ads
+Connecting your Meta account is the first step. Until it is connected, audiences cannot be delivered or activated.
 
-Slopeside delivers audiences directly into Meta Ads. To do this, your Meta Ads account must be connected with the correct permissions.
+## Before you start
 
-Most setup issues happen here, so it’s worth taking a minute to confirm access before moving forward.
+Make sure you have:
 
----
+- Admin access to your Meta Business Portfolio (formerly Business Manager)
 
-## What gets connected
+- Access to the specific Ad Account you want to use with Slopeside
 
-When you connect Meta Ads, you allow Slopeside to:
-- Deliver audiences into your ad account
-- Keep those audiences updated
-- Make them available for campaign use
+- Your Meta account is not restricted or under review
 
-Slopeside does not create campaigns, ads, or budgets.
+<Note>
 
----
+If your Meta account is managed by an agency, you will need either admin access yourself or your agency will need to complete this step on your behalf. Agencies can connect client accounts through their own Slopeside dashboard.
 
-## Required permissions
-
-The Meta user completing this step must:
-- Have admin access to the ad account
-- Have permission to manage custom audiences
-- Be connected through the correct Business Manager
-
-If permissions are missing, the connection may appear successful but fail later during activation.
-
----
+</Note>
 
 ## How to connect
 
-1. Go to the Integrations or Settings area in Slopeside  
-2. Select **Connect Meta Ads**  
-3. Log in with the correct Meta user  
-4. Confirm the correct ad account during authorization  
+<Steps>
 
-Once connected, you’ll see the connection status in your dashboard.
+  <Step title="Open Settings">
 
----
+      In your Slopeside dashboard, go to Settings then Connected Accounts.
 
-## Common questions
+  </Step>
 
-**Can I reconnect later?**  
-Yes. If permissions change in Meta, you can reconnect at any time.
+  <Step title="Click Connect Meta">
 
-**Does this affect live campaigns?**  
-No. Connecting Meta Ads does not change existing campaigns.
+      Select Connect Meta Ads Account. This opens the Leadsie authorization flow.
 
----
+  </Step>
+
+  <Step title="Authorize access">
+
+      Log in to Meta and grant Slopeside access to your Ad Account. You will be asked to approve the following permissions:
+
+          - View your ad account performance and settings
+
+          - Manage your custom audiences
+
+      Both permissions are required. Slopeside uses view access to pull performance data for the Performance tab, and manage access to deliver audiences to your account.
+
+  </Step>
+
+  <Step title="Select your Ad Account">
+
+      If you have multiple ad accounts in your Business Portfolio, select the specific account you want to use with Slopeside.
+
+  </Step>
+
+  <Step title="Confirm connection">
+
+      Return to the Slopeside dashboard. Your account status should show Connected with a green indicator.
+
+  </Step>
+
+</Steps>
+
+## What happens after you connect
+
+- Your Meta account is verified and linked to your Slopeside workspace
+
+- Audiences you activate will be delivered to the connected ad account within 24 hours
+
+- The Performance tab will be able to pull ad set-level data once you tag your test ad sets
+
+## Troubleshooting
+
+If the connection fails or shows as disconnected after completing the flow, see [Meta Connection Troubleshooting](/user-guide/troubleshoot/meta-connection).
+
+Common causes include:
+
+- Insufficient permissions in your Meta Business Portfolio
+
+- The ad account not being assigned to your Business Portfolio
+
+- A Meta session timeout during the authorization flow (try again)
 
 ## What to do next
 
-After Meta Ads is connected, you’re ready to activate your first audience.
+Once your Meta account is connected, activate your first audience.
 
-Continue to **Activate Audience**.
+[Activate Your First Audience →](/user-guide/quick-start/activate-audience)

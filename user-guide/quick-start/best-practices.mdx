@@ -1,59 +1,58 @@
 ---
-title: "Best Practices"
-description: "How to test and launch Slopeside correctly, including recommended A/B testing behavior and what to avoid."
+title: "Quick Start Best Practices"
+description: "The most important things to get right before you spend a dollar."
 ---
 
-## Best practices for testing and launch
+These are the mistakes that most commonly cause a Slopeside test to produce bad or inconclusive data. Read this before you launch.
 
-The most common mistake teams make is changing too many variables at once.
+## Test setup
 
-Slopeside works best when evaluated using a clean, controlled test.
+Use an existing ad set as your control — not a new one.
 
----
+Your control needs conversion history for the comparison to be meaningful. Duplicate your current best-performing ad set and swap only the audience. If both ad sets are new, both are in Meta's learning phase simultaneously and results will be unreliable.
 
-## How to test Slopeside correctly
+Keep everything identical except the audience.
 
-For a valid test:
-- Use the same campaign structure
-- Use the same creative
-- Use the same budget
-- Change only the audience
+Same creative, same copy, same landing page, same budget, same campaign objective. The only variable is the audience. Changing anything else makes it impossible to know what caused a performance difference.
 
-This isolates the impact of Slopeside’s audience signals.
+Use ABO (Ad Set Budget Optimization), not CBO.
 
----
+Set your budget at the ad set level so each ad set receives its allocated spend. With CBO, Meta can shift budget toward whichever ad set it already favors early on, which skews the comparison before the test is valid.
 
-## What to avoid early on
+Add your Slopeside audience as an Advantage+ suggestion.
 
-Avoid:
-- Combining multiple Slopeside audiences in one test
-- Changing creative mid-test
-- Expecting instant results without a learning phase
+In your ad set settings, keep Advantage+ (ASC+) turned on and add your Slopeside audience under Suggest an audience. Keep targeting broad. Slopeside works as a starting signal, not a hard constraint.
 
-These behaviors make results hard to interpret.
+## During the test
 
----
+Do not touch the campaign for at least 14 days.
 
-## What “normal” looks like
+Editing, pausing, or restarting an ad set resets Meta's learning phase. Let both ad sets run for the full test window.
 
-Early performance may fluctuate as Meta learns. This is expected.
+Expect higher CPM on the Slopeside ad set.
 
-Focus on:
-- Directional improvements
-- Consistency over time
-- Clear comparisons to your existing audiences
+This is normal and expected. You are reaching a more targeted, higher-intent audience. Higher CPM does not mean the audience is underperforming. Watch CPA.
 
----
+Do not judge results in the first few days.
 
-## If results aren’t clear
+Meta's learning phase produces erratic results while the algorithm is still exploring. Results become meaningful after both ad sets have logged roughly 50 conversions and at least 7 days of data. For a full, reliable read, run for 14 days.
 
-If you’re unsure how to interpret test results:
-- Check that the test setup was clean
-- Review the Testing section later in the User Guide
-- Avoid making changes too quickly
+## Reading results
 
----
+CPA is the primary metric.
 
-## What’s next
+Compare cost per acquisition (or cost per lead, depending on your objective) between the two ad sets. This is what determines whether Slopeside is working.
 
-Once you’re live, the **Manage** section will help you operate and expand your use of Slopeside.
+Secondary metrics to watch:
+
+- Conversion rate (are clicks converting at a higher rate?)
+
+- ROAS (for ecommerce accounts)
+
+Ignore:
+
+- CPM differences between ad sets
+
+- CTR in isolation (a higher CTR that doesn't convert is not a win)
+
+For a full breakdown of how to evaluate your test, see [Success Metrics](/user-guide/testing/success-metrics).
