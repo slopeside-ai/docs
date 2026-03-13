@@ -1,5 +1,58 @@
 ---
 title: "Errors"
-description: "Common errors and how to resolve them."
+description: "Common error messages in Slopeside and what they mean."
 ---
 
+## Dashboard errors
+
+**"Meta account not connected"**
+
+Your Meta account is not linked or the connection has lapsed. Go to Settings then Connected Accounts and reconnect. See [Meta Connection](/user-guide/troubleshoot/meta-connection) for full steps.
+
+**"Audience sync failed"**
+
+The last sync attempt did not complete. This is usually caused by a token expiry or a temporary Meta API issue. Try reconnecting your Meta account. If the error persists after reconnecting, contact support with the audience name and the time the error appeared.
+
+**"Audience too small to deliver"**
+
+The audience has fewer than 100 matched users in Meta and cannot be activated for delivery. Contact support — we can review the audience category and suggest alternatives.
+
+**"Payment failed"**
+
+Your most recent billing charge did not process. Go to Settings then Billing and update your payment method. Audiences stop refreshing if payment lapses for more than a few days. They resume automatically once billing is resolved.
+
+**"Campaign not found"**
+
+This appears in the Performance tab when the campaign you selected is no longer active or accessible in your connected Meta account. Confirm the campaign is still live in Meta Ads Manager and that you are connected to the correct ad account. If you have reconnected Meta recently, it may take up to an hour for campaign data to repopulate.
+
+## Performance tab errors
+
+**Ad set data not loading**
+
+This usually means the Meta API connection needs to be refreshed. Reconnect your Meta account via Settings then Connected Accounts and return to the Performance tab. Allow a few minutes for data to reload.
+
+**"No conversions tracked"**
+
+If your ad sets show zero conversions in the Performance tab, check that:
+
+- Your Meta Pixel is installed correctly and firing on your conversion event
+
+- The conversion event selected in your ad set matches the event your Pixel is reporting
+
+- Your ad sets have been tagged correctly in the Performance tab
+
+Slopeside pulls conversion data from Meta's API — if conversions are not appearing in Meta Ads Manager either, the issue is with your Pixel setup, not Slopeside.
+
+## Contact support
+
+If you encounter an error not listed here or an error that persists after following the steps above, contact support at support@slopeside.ai or use the chat in your dashboard.
+
+Include the following when you reach out:
+
+- The error message exactly as it appears
+
+- Which page or feature it appeared on
+
+- Approximately when it first occurred
+
+- Your connected Meta Ad Account ID (found in Meta Ads Manager under account settings)

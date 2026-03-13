@@ -1,58 +1,54 @@
 ---
-title: "Mistakes"
-description: "Common testing errors that lead to misleading results."
+title: "Common Test Mistakes"
+description: "The errors that most commonly produce bad or inconclusive test data."
 ---
 
-## Common testing mistakes
+These are the mistakes that invalidate a Slopeside test most often. Most of them are easy to avoid if you set the test up correctly from the start.
 
-Most testing issues come from changing too many variables or making decisions too quickly.
+## Using a new ad set as your control
 
-Avoiding these mistakes leads to clearer outcomes.
+What happens: Both ad sets enter Meta's learning phase simultaneously. Results in the first week are unreliable for both, making comparison meaningless.
 
----
+Fix: Use an existing ad set with conversion history as your control. Duplicate it and swap only the audience. See [Run the Test](/user-guide/testing/run-the-test).
 
-## Changing multiple variables
+## Editing the campaign during the test
 
-Changing creative, budget, and audience at the same time makes results impossible to interpret.
+What happens: Any change to budget, creative, audience, or campaign structure resets Meta's learning phase for the affected ad set. The comparison becomes invalid.
 
-Always isolate the audience variable.
+Fix: Set it up correctly on day one and do not touch it for 14 days. If you need to make changes to a live campaign for business reasons, pause the test first and restart it cleanly.
 
----
+## Using CBO instead of ABO
 
-## Ending tests too early
+What happens: Meta shifts budget toward whichever ad set shows early promise — often before either ad set has reliable data. The Slopeside ad set may receive significantly less spend than intended, producing an underpowered test.
 
-Meta needs time to learn.
+Fix: Set budget at the ad set level using Ad Set Budget Optimization (ABO). Each ad set should receive a minimum of $50 per day independently.
 
-Ending a test after a short period can lead to incorrect conclusions.
+## Judging results too early
 
----
+What happens: CPA in the first three to five days is often misleading. Meta is still in its learning phase, delivery is erratic, and early results can look much worse — or better — than the final outcome.
 
-## Overreacting to short-term swings
+Fix: Do not review or act on results until day 14. Set a calendar reminder and ignore the data until then.
 
-Daily performance fluctuations are normal, especially early on.
+## Pausing the Slopeside ad set when early CPA looks high
 
-Look at trends, not individual data points.
+What happens: Early high CPA is normal during learning phase. Pausing resets learning and wastes the budget already spent. You restart from zero with less trial time remaining.
 
----
+Fix: Expect higher CPA in the first few days. This is part of how Meta's learning phase works for any new ad set. Let it run.
 
-## Testing too many audiences at once
+## Testing audience and creative simultaneously
 
-Testing multiple audiences simultaneously can split budget and learning.
+What happens: If you use different creative in the Slopeside ad set than in your control, any performance difference could be caused by the creative, not the audience. You cannot isolate the variable.
 
-Start with one audience, then expand once you see clear signals.
+Fix: Identical creative in both ad sets. The only difference between your control and your Slopeside ad set should be the audience.
 
----
+## Comparing against a retargeting ad set
 
-## Common questions
+What happens: Retargeting audiences (website visitors, existing customers, video viewers) convert at a fundamentally different rate than cold prospecting audiences. Comparing Slopeside — a prospecting audience — against a warm retargeting audience is not a fair test.
 
-**Can I “fix” a test mid-flight?**  
-If you change core variables, the test is no longer valid.
+Fix: Your control should be your best cold prospecting ad set. Compare like for like.
 
-**Should I pause a losing test immediately?**  
-Unless performance is severely off, allow time for learning before stopping.
+## Not tagging ad sets in the Performance tab
 
----
+What happens: Without tags, the Slopeside dashboard cannot pull the right data or display your comparison. You are running a test with no way to read the results in one place.
 
-## What to do next
-
-Once you’ve completed testing, move into **Use Cases** or **Scaling** to apply what you’ve learned.
+Fix: Tag your ad sets in the Performance tab as soon as the campaign is live. This takes two minutes and makes your results significantly easier to interpret.

@@ -1,66 +1,63 @@
 ---
 title: "Run the Test"
-description: "Step-by-step guidance for running a clean A/B test."
+description: "The exact setup for a valid Slopeside A/B test."
 ---
 
-## How to run a clean A/B test
+## Test structure
 
-A clean test changes only one variable: the audience.
+A valid Slopeside test has one variable: the audience. Everything else is identical between your control and your Slopeside ad set.
 
-Everything else stays the same.
+<Steps>
+<Step title="Find your control ad set">
+In Meta Ads Manager, identify your current best-performing ad set — one that has been running long enough to have meaningful conversion history. This is your control. Do not create a new one.
 
-This ensures you’re evaluating Slopeside’s audience signals, not unrelated factors.
+A good control ad set has at least 2 to 4 weeks of run history, consistent delivery (not paused or restarted frequently), and enough conversions to have exited or nearly exited Meta's learning phase.
+</Step>
 
----
+<Step title="Duplicate the ad set">
+Duplicate that ad set within the same campaign. In the duplicate, keep the same creative, same copy, same budget, same campaign objective, same bid strategy, and same placement settings. Change only the audience.
+</Step>
 
-## Recommended test setup
+<Step title="Swap the audience">
+In the duplicated ad set, remove your existing audience targeting and add your Slopeside Custom Audience. If you're using Advantage+ Audience (ASC+), keep it on and add the Slopeside audience as a suggestion under the Advantage+ audience settings.
+</Step>
 
-For the most reliable results:
-- Use the same campaign objective
-- Use the same creative
-- Use the same budget
-- Use the same campaign or ad set structure
-- Change only the audience
+<Step title="Name the ad sets clearly">
+Rename the ad sets so you can track them easily. For example: `[Control] Existing Audience` and `[Test] Slopeside Audience`.
+</Step>
 
-One version should use your existing audience.  
-The other should use a Slopeside audience.
+<Step title="Launch both ad sets simultaneously">
+Start both ad sets at the same time. This ensures they run under the same market conditions, same auction dynamics, and same seasonal factors. Do not stagger the start dates.
+</Step>
+</Steps>
 
----
+## Budget guidance
 
-## Step-by-step testing approach
+Set the same daily budget on both ad sets. The minimum recommended budget per ad set is whatever it takes to generate approximately 50 conversions in a 14-day window, based on your historical CPA.
 
-1. Identify a campaign or ad set that already performs reasonably well  
-2. Duplicate the setup  
-3. Swap the audience in the duplicate with a Slopeside audience  
-4. Launch both versions simultaneously  
-5. Let Meta optimize without intervention  
+If your CPA is $40, that means at least $2,000 total per ad set, or $143/day, to generate the data needed for a valid read.
 
-Avoid making changes while the test is running.
+<Note>
+Running with too little budget is one of the most common reasons tests produce inconclusive results. If you can't fund both ad sets at the minimum level, consider testing over a longer window (21–28 days) to accumulate enough conversion data.
+</Note>
 
----
+## Test duration
 
-## Using Slopeside audiences in tests
+Run the test for a minimum of 14 days. 21 days is preferred for most accounts.
 
-You can test Slopeside audiences:
-- Directly
-- As seed audiences for expansion or lookalikes
+Do not evaluate results until both ad sets have exited Meta's learning phase (typically 50 conversions each) and at least 7 days have passed.
 
-Choose one approach per test to keep results clear.
+## What not to change during the test
 
----
+Once the test is live, do not:
 
-## Common questions
+- Edit either ad set's targeting, creative, or budget
+- Pause and restart either ad set
+- Add new ad creatives to either ad set
+- Change campaign-level settings
 
-**Can I test multiple Slopeside audiences at once?**  
-For initial testing, we recommend testing one audience at a time.
+Any of these actions can reset Meta's learning phase and invalidate your results.
 
-**Can I change creative during the test?**  
-No. Changing creative resets learning and invalidates comparisons.
+## How to read results
 
----
-
-## What to do next
-
-After your test is running, the next step is knowing how to evaluate results.
-
-Continue to **Success Metrics**.
+Go to your Slopeside Performance tab to compare the two ad sets. The primary metric is CPA (cost per acquisition or cost per lead). See [Success Metrics](/user-guide/testing/success-metrics) for how to interpret results correctly.

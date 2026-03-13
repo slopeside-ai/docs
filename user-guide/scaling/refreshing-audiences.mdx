@@ -1,0 +1,68 @@
+---
+title: "Refreshing Your Audiences"
+description: "How and when to refresh your Slopeside Custom Audiences to maintain performance as you scale."
+---
+
+Slopeside audiences are continuously updated behind the scenes — the behavioral intent signals that populate your Custom Audiences are refreshed regularly. However, as you scale spend and your campaigns mature, there are specific situations where you'll want to take action to keep your audiences performing well.
+
+## How Automatic Refreshes Work
+
+Slopeside processes new behavioral signals and updates your Meta Custom Audiences on a recurring cadence. This means:
+
+- People who are no longer showing active in-market behavior are removed
+- New high-intent users who have entered the market are added
+- Your audience size fluctuates naturally based on current in-market activity levels
+
+You don't need to do anything for this automatic process — it happens in the background.
+
+<Note>
+Audience size will vary week to week based on real in-market demand. A smaller audience during a slow period is normal and expected. Do not artificially inflate audiences by loosening targeting.
+</Note>
+
+## When to Manually Review Your Audience
+
+While refreshes happen automatically, you should review your audience health in these situations:
+
+**Audience size drops significantly** — If your Custom Audience size drops by more than 40% from its typical range, check your Slopeside dashboard for any sync errors or configuration issues.
+
+**Performance declines without a clear cause** — If CPA rises and frequency is normal, a shrinking or stale audience may be the issue. Review audience size in Meta Ads Manager.
+
+**After a major budget increase** — High-spend campaigns can move through the current audience pool quickly. After scaling spend significantly, check audience size weekly.
+
+**Seasonal demand shifts** — Some product categories see significant changes in in-market activity by season. During off-peak periods, audiences may naturally be smaller.
+
+## Manually Triggering a Refresh
+
+If you need a fresh audience pull outside the normal cadence:
+
+<Steps>
+  <Step title="Log in to your Slopeside dashboard">
+      Navigate to [app.slopesideai.com](https://app.slopesideai.com) and go to your Audiences section.
+        </Step>
+          <Step title="Select the audience to refresh">
+              Click on the audience you want to refresh. You'll see the last sync date and current size.
+                </Step>
+                  <Step title="Click Refresh Audience">
+                      Use the Refresh button to trigger an immediate re-pull of current behavioral signals. This typically completes within a few hours.
+                        </Step>
+                          <Step title="Verify in Meta Ads Manager">
+                              After the refresh completes, check your Custom Audience in Meta to confirm the updated size.
+                                </Step>
+                                </Steps>
+
+                                ## Best Practices for Audience Maintenance
+
+                                - **Check audience size weekly** when running campaigns at significant spend levels
+                                - **Don't pause campaigns** while waiting for a refresh — the audience update happens in the background and won't disrupt active campaigns
+                                - **Set up alerts** in Meta Ads Manager for audience size drops if available in your account
+                                - **Rotate creative regularly** — even a healthy, fresh audience will fatigue if shown the same ad too many times
+
+                                ## Multiple Audiences and Tiers
+
+                                If your Slopeside plan includes multiple audience segments (e.g., high-intent and broader intent tiers), manage them separately:
+
+                                - Each audience refreshes on its own cadence
+                                - High-intent audiences tend to be smaller but more efficient
+                                - Broader intent audiences provide more scale but may need stronger creative to convert
+
+                                See [When and How to Scale](/user-guide/scaling/when-and-how-to-scale) for guidance on how to layer multiple audience tiers as you grow.

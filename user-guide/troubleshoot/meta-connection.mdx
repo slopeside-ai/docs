@@ -1,5 +1,72 @@
 ---
 title: "Meta Connection"
-description: "Fixing connection and permission issues."
+description: "How to fix Meta account connection issues and restore audience delivery."
 ---
 
+## Check your connection status first
+
+In your Slopeside dashboard, go to Settings then Connected Accounts. Your Meta account status will show one of the following:
+
+- Connected — everything is working normally
+
+- Disconnected — the connection has been lost and needs to be restored
+
+- Token expired — Meta's authorization has lapsed and needs to be refreshed
+
+If you see Disconnected or Token expired, reconnect your account using the steps below before troubleshooting anything else. Most sync and delivery issues resolve automatically once the connection is restored.
+
+## How to reconnect
+
+<Steps>
+
+  <Step title="Go to Connected Accounts">
+
+      In your Slopeside dashboard, go to Settings then Connected Accounts.
+
+        </Step>
+
+          <Step title="Click Reconnect">
+
+              Select Reconnect next to your Meta account. This opens the Leadsie authorization flow.
+
+                </Step>
+
+                  <Step title="Reauthorize access">
+
+                      Log in to Meta and reapprove the required permissions. Both permissions are required — view performance and manage custom audiences. If you only approve one, delivery will not work correctly.
+
+                        </Step>
+
+                          <Step title="Confirm">
+
+                              Return to the dashboard. Your status should show Connected with a green indicator within a few minutes.
+
+                                </Step>
+
+                                </Steps>
+
+                                ## Common connection issues
+
+                                **Connection fails during authorization**
+
+                                This usually means your Meta session timed out or you declined one of the required permissions. Try the reconnection flow again and make sure to approve both permissions when prompted.
+
+                                If you are using a Meta account managed through a Business Portfolio, confirm that the ad account is properly assigned to your Business Portfolio before attempting to connect. Unassigned ad accounts cannot be linked.
+
+                                **Connected but audiences not appearing in Meta**
+
+                                Allow up to 24 hours after connection for audiences to appear in Meta Ads Manager. If an audience has been activated and does not appear after 24 hours:
+
+                                - Confirm the audience status shows Active in your Slopeside dashboard
+
+                                - Check that you are looking in the correct Meta Ad Account (if you manage multiple accounts)
+
+                                - Contact support if the audience still does not appear after 24 hours
+
+                                **Agency or restricted account**
+
+                                If your Meta account has restricted permissions, is under review, or is managed by an agency with limited access settings, the connection may fail even if authorization appears to complete. Contact support with your Meta Business Portfolio ID and we can help identify the issue.
+
+                                **Token keeps expiring**
+
+                                Meta authorization tokens expire periodically and after certain account changes (password reset, security settings change, two-factor authentication update). If you are reconnecting frequently, check whether any Meta account security settings have changed recently. There is no way to prevent token expiry — reconnecting is the standard resolution.

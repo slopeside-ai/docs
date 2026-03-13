@@ -1,63 +1,69 @@
 ---
 title: "Success Metrics"
-description: "How to judge test performance and what signals matter."
+description: "How to read your test results and decide what to do next."
 ---
 
-## How to judge test results
+## The primary metric: CPA
 
-When evaluating a test, focus on trends and consistency rather than single-day results.
+Cost per acquisition is the number that determines whether your Slopeside test is working. Compare the CPA of your Slopeside ad set against your control ad set over the full 14-day window.
 
-Meta’s learning phase can cause short-term fluctuations that are normal.
+Everything else — CPM, CTR, impressions, reach — is secondary. A test where Slopeside produces higher CPM and lower CPA is a successful test. A test where Slopeside produces lower CPM but the same CPA is inconclusive.
 
----
+## What the results mean
 
-## Metrics to pay attention to
+**Slopeside CPA is lower than control**
 
-While exact metrics vary by business, common indicators include:
-- Cost per conversion or lead
-- Conversion rate
-- Stability of performance over time
-- Spend consistency
+Your test suggests Slopeside is working in your account. The size of the difference matters:
 
-Compare these metrics between your baseline audience and the Slopeside audience.
+- A 10 to 20 percent CPA improvement is a meaningful, commercially significant result — at $10K to $50K monthly spend, that compounds quickly
 
----
+- A 20 percent or greater improvement is a strong result worth scaling
 
-## What “success” looks like
+- A small improvement (under 10 percent) with limited conversion volume may reflect normal variance rather than a real signal — consider extending the test or increasing budget before scaling
 
-A successful test may show:
-- Lower costs
-- Improved consistency
-- Faster stabilization
-- Clear directional improvement
+**CPAs are similar**
 
-Not every test produces a dramatic win. Directional improvement is still meaningful.
+The test is inconclusive. This can happen for a few reasons:
 
----
+- Not enough conversions on one or both ad sets (fewer than 50 per ad set reduces reliability significantly)
 
-## Interpreting mixed results
+- The test ran through an unusual period — a sale, a product launch, a seasonal spike — that affected one ad set differently
 
-If results are mixed:
-- Check that the test setup was clean
-- Confirm enough time passed
-- Avoid overreacting to small differences
+- The audience category may need adjustment — contact support to discuss whether a different Slopeside audience is a better fit for your buyer profile
 
-It’s common for performance to improve gradually as Meta learns.
+Do not interpret a similar CPA as evidence that Slopeside does not work. It may mean the test needs more data or a different setup.
 
----
+**Slopeside CPA is higher than control**
 
-## Common questions
+Look at conversion volume first. If either ad set has fewer than 50 conversions, the result is not statistically reliable.
 
-**What if results are flat?**  
-Flat results still provide information. Consider testing a different audience or use case.
+If both ad sets have sufficient conversion volume and Slopeside CPA is still meaningfully higher after 14 days, contact support. There are a few common causes — audience category mismatch, a creative that resonates strongly with your existing audience but not with a new one, or a B2B audience being evaluated over a window that included mostly weekend days.
 
-**What if Slopeside underperforms initially?**  
-Initial underperformance does not always indicate failure. Review setup and allow sufficient learning time.
+## Secondary metrics worth reviewing
 
----
+Once you have confirmed your CPA comparison, these secondary signals add useful context:
 
-## What to do next
+| Metric | What it tells you |
+|---|---|
+| Conversion rate | Are Slopeside clicks converting at a higher rate? Higher conversion rate with similar CPA suggests better traffic quality |
+| ROAS | For ecommerce accounts, are Slopeside customers spending more per order? |
+| CPM | Expected to be higher on Slopeside — confirms the audience is reaching a more targeted pool |
+| CTR | Less meaningful in isolation, but a significantly lower CTR may indicate a creative mismatch with the new audience |
 
-Once you’ve evaluated results, decide whether to scale, iterate, or test another audience.
+## What to do after a successful test
 
-If results were unclear, review **Mistakes** to identify possible issues.
+Scale the Slopeside ad set. Increase budget in increments — no more than 20 to 30 percent every 48 to 72 hours — to avoid triggering a new learning phase.
+
+Test additional audiences. Your trial includes one audience. Paid plans include access to multiple segments. Testing a second or third audience from the catalog helps you identify which behavioral profiles perform best for your specific product and price point.
+
+Use Slopeside audiences as lookalike seeds. Once you have a validated Slopeside audience, it makes an effective seed for Meta's lookalike engine. A lookalike built from an audience of active researchers tends to outperform one built from a static customer list.
+
+## Minimum data thresholds
+
+Do not make scaling or cancellation decisions before your test meets these minimums:
+
+- At least 14 days of runtime
+
+- At least 50 conversions on each ad set
+
+If you have not reached 50 conversions per ad set within 14 days, extend the test or increase the daily budget before drawing conclusions.

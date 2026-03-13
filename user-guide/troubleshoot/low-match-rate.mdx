@@ -1,5 +1,42 @@
 ---
 title: "Low Match Rate"
-description: "Understanding and troubleshooting low match rates."
+description: "Why your Slopeside audience match rate may be lower than expected and how to address it."
 ---
 
+## What match rate means
+
+When Meta receives a custom audience, it attempts to match the uploaded identifiers against its user database. Match rate is the percentage of records that successfully find a corresponding Meta profile.
+
+A higher match rate means Meta has more users to optimize against, which produces faster learning and more stable delivery. A lower match rate means Meta has fewer users to work with.
+
+## What to expect with Slopeside audiences
+
+Slopeside audiences are built with personal identifiers — emails, phone numbers, and other contact data resolved to consumer profiles — rather than raw business emails. This is specifically designed to improve match rates compared to uploading a standard CRM or business contact list.
+
+Match rates vary by audience category and geography. B2B audiences typically match at higher rates than raw business email lists because of the identity resolution step. DTC audiences vary by category.
+
+If your audience shows as too small to deliver in Meta (Meta requires a minimum of 100 matched users), contact support.
+
+## Common causes of lower than expected match rates
+
+**The audience category is very niche**
+
+Highly specific audience segments may have a smaller underlying data pool, which can result in a smaller delivered audience and lower absolute match numbers. This is not the same as a low match rate — it reflects the size of the intent pool for that category.
+
+**Geographic targeting is narrow**
+
+If you have restricted delivery to a small geographic area in Meta (a single city or region), the audience size after geographic filtering may be small even if the overall match rate is healthy. Check your ad set geographic settings.
+
+**Meta account is new**
+
+New Meta Ad Accounts with limited history sometimes show lower match rates during initial audience delivery. This typically improves after the account has been running for several weeks.
+
+## What does not affect match rate
+
+- The age of your Slopeside subscription
+
+- How long an audience has been active
+
+- Creative or bidding settings
+
+Match rate is determined by the quality of identifiers in the audience and Meta's ability to find corresponding profiles. It is not affected by campaign settings.

@@ -1,0 +1,59 @@
+---
+title: "Where Does Slopeside Data Come From?"
+description: "A transparent breakdown of the data sources and methodology Slopeside uses to build behavioral intent audiences."
+---
+
+Slopeside builds its behavioral intent audiences by aggregating signals from multiple data sources across the web. This article explains what those sources are, how the data is processed, and what privacy protections are in place.
+
+## Overview of Data Sources
+
+Slopeside draws from a network of publisher and data partner integrations to capture behavioral signals at scale. These include:
+
+**Web browsing behavior** — anonymized signals from publisher networks indicating category-level research and product exploration activity.
+
+**Search intent signals** — aggregated query patterns showing active research behavior in specific product categories (not personally tied to individuals).
+
+**Content engagement** — signals from review sites, comparison platforms, and editorial content indicating purchase consideration behavior.
+
+**Repeat engagement patterns** — tracking of signal frequency and recency to identify people who are actively in-market versus casually browsing.
+
+<Note>
+Slopeside does not purchase or use data from data brokers, does not access Meta's user data directly, and does not use any personally identifiable information (PII) in audience construction.
+</Note>
+
+## How Signals Are Processed
+
+Raw behavioral signals go through several processing stages before becoming a usable audience:
+
+1. **Signal collection** — Behavioral events are collected from partner networks with user consent frameworks in place.
+2. **Anonymization** — All signals are stripped of PII at the point of collection. Slopeside works exclusively with hashed, aggregated, or anonymized data.
+3. **Intent scoring** — Signals are weighted by recency, frequency, and category specificity to produce an intent score.
+4. **Audience construction** — Users who meet the threshold for active in-market behavior are included in the relevant audience segment.
+5. **Match to Meta** — The audience is matched against Meta's identity graph using privacy-safe methods (hashed emails where applicable, or direct Custom Audience pixel matching).
+
+## Data Freshness and Refresh Cadence
+
+Slopeside audiences are continuously updated to reflect current in-market behavior. Audience lists are refreshed on a regular cadence so that:
+
+- People who have left the consideration window are removed
+- New high-intent users who have entered the market are added
+- Your Custom Audiences in Meta always reflect the most current signals
+
+This is one of the key advantages over static lookalike audiences or retargeting lists, which can go stale quickly.
+
+## Geographic and Category Coverage
+
+Slopeside's data network covers the United States and major English-speaking markets. Coverage depth varies by product category — categories with high online research activity (e.g., outdoor gear, apparel, consumer electronics, home goods) tend to have denser signal coverage.
+
+If you're unsure whether Slopeside has strong coverage for your specific category, the best way to evaluate is to run the recommended A/B test against your current best-performing audience. See [How to Run the Test](/user-guide/testing/run-the-test) for the recommended setup.
+
+## What Slopeside Does Not Use
+
+To be explicit about privacy practices:
+
+- **No PII** — Slopeside does not collect, store, or process names, email addresses, phone numbers, or other personally identifiable data
+- **No purchase history** — Slopeside does not access transaction data or purchase records
+- **No Meta data** — Slopeside does not receive or use any data from Meta's platform
+- **No device fingerprinting** — Slopeside does not use cross-device fingerprinting techniques
+
+For more detail on privacy and compliance practices, see the [Privacy & Data Policy](/user-guide/security/privacy) article.

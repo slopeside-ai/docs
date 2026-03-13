@@ -1,5 +1,46 @@
 ---
 title: "Data Handling"
-description: "What data is collected, processed, and not stored."
+description: "How Slopeside stores, processes, and protects data."
 ---
 
+## Data in transit and at rest
+
+All data transmitted between Slopeside and your browser, and between Slopeside and Meta's API, is encrypted in transit using TLS. Data stored in Slopeside's infrastructure is encrypted at rest.
+
+## Access controls
+
+Access to Slopeside's production systems is restricted to authorized personnel with a demonstrated need. Role-based access controls limit what each team member can access. Access is reviewed and audited on an ongoing basis.
+
+## What Slopeside stores about your account
+
+Slopeside stores the following in connection with your account:
+
+- Your account profile (name, email, company)
+
+- Your connected Meta Ad Account ID and authorization token
+
+- Your active audience selections and activation history
+
+- Ad set-level performance data pulled from Meta's API for display in your Performance tab
+
+- Billing history and subscription status (managed through Stripe)
+
+Slopeside does not store your Meta campaign creative, ad copy, targeting settings, or budget details.
+
+## Data retention after cancellation
+
+When your subscription ends, your account data and Performance tab history are retained for 30 days. After 30 days, your data is permanently deleted from Slopeside's systems.
+
+Your Meta custom audiences are not automatically deleted when your subscription ends — they remain in your Meta Ads account and you can manage or delete them directly in Meta Ads Manager.
+
+## Audience data
+
+Slopeside does not store raw audience member data in your account. Audiences are built from anonymized behavioral signals and delivered to Meta as hashed custom audiences. Once delivered, Slopeside does not retain a copy of the hashed audience records.
+
+## Incident response
+
+In the event of a data security incident affecting customer data, Slopeside will notify affected customers in accordance with applicable legal requirements. For questions about our incident response procedures, contact support@slopeside.ai.
+
+## Reporting a security concern
+
+If you identify a potential security vulnerability or have a concern about data handling, contact us directly at support@slopeside.ai. Please do not publish security vulnerabilities publicly before giving us the opportunity to investigate and respond.
